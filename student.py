@@ -27,9 +27,9 @@ class Student:
 
         self.mysql_host = "localhost"
         self.mysql_username = "root"
-        self.mysql_pass = "7575"
+        self.mysql_pass = "12345@67890"
         self.mysql_DB = "face_recognizer"
-        self.mysql_port = 3306
+        self.mysql_port = 3304
 
         # Load and place images
         self.load_and_place_image("Images/face.jpeg", 0, 0, 640, 200)
@@ -630,9 +630,9 @@ class Student:
         cv2.waitKey(1000)
 
         cap.release()
-        cv2.destroyAllWindows()
+        # cv2.destroyAllWindows()
         messagebox.showinfo("Result", "Generating data sets completed !!!")
-        self.reset_data()
+        # self.reset_data()
 
     # ============ Validation Functions =============
     # ============ Validation Phone Number =============
